@@ -6,12 +6,12 @@ font pango:droid sans mono 8
 
 # Window decoration
 # <normal|1pixel|none|pixel>
-new_window  1pixel
-new_float   1pixel
+new_window  pixel
+new_float   pixel
 
-############
-# Bindings #
-############
+################
+#=> Bindings <=#
+################
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -133,3 +133,10 @@ mode "resize" {
 bar {
   status_command i3status
 }
+
+#############################
+#=> Autoload applications <=#
+#############################
+
+# Set x root window (background) colour
+exec --no-startup-id xsetroot -solid "#2B2B2B"

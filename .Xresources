@@ -1,6 +1,6 @@
-!==================================!
-!=>  rxvt-unicode terminal stuff <=!
-!==================================!
+!=================================!
+!=> rxvt-unicode terminal stuff <=!
+!=================================!
 URxvt.saveLines:    2048
 URxvt.visualBell:   false
 URxvt.urgentOnBell: true
@@ -10,25 +10,29 @@ URxvt.boldFont:     xft:Droid Sans Mono:bold:size=10
 URxvt.scrollBar:    false
 URxvt.fading:       10
 
-!enabling clickable links:
+! enabling clickable links:
 URxvt.urlLauncher:    /usr/bin/firefox
 URxvt.matcher.button: 1 
 
-!urxvt color scheme:
+! urxvt color scheme:
 URxvt*background:   #2B2B2B
 URxvt*foreground:   #DEDEDE
 URxvt*colorUL:      #86a2b0
 
-!===============!
-!=>  Xft font <=!
-!===============!
+! pseudo transparency
+URxvt*transparent:  true
+URxvt*shading:      15
+
+!==============!
+!=> Xft font <=!
+!==============!
 Xft*dpi:            96
 Xft*antialias:      true
 Xft*hinting:        full
 
-!==============!
-!=>  Colours <=!
-!==============!
+!=============!
+!=> Colours <=!
+!=============!
 This theme is: Some random one from the Arch forums
 ! black
 *color0:       #2E3436
