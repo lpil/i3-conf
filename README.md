@@ -1,7 +1,9 @@
 i3_config
 =========
 
-My i3 desktop, build on a minimal Debian install
+My i3 desktop.
+
+Tested on Debian Jessie with i3 version 4.7
 
 ## Features
 
@@ -15,6 +17,7 @@ My i3 desktop, build on a minimal Debian install
 | gtk icon theme | gnome-brave |
 | gtk theme | Adwaita |
 | terminal | rxvt unicode 256 |
+| wm | i3 |
 
 ### Recommended
 | What | Which |
