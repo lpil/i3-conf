@@ -11,13 +11,15 @@ My i3 desktop, build on a minimal Debian install
 
 | What | Which |
 | ---- | ----- |
-| gtk-icon-theme | gnome-brave |
-| gtk-theme | Adwaita |
 | font | Droid |
+| gtk icon theme | gnome-brave |
+| gtk theme | Adwaita |
 | terminal | rxvt unicode 256 |
 
-### Recommends
+### Recommended
 | What | Which |
 | ---- | ----- |
+| cursor theme | DMZ |
 | editor | vim |
 | fm | vifm |
+| irc | weechat |

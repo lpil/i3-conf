@@ -15,16 +15,9 @@ URxvt.urlLauncher:    /usr/bin/firefox
 URxvt.matcher.button: 1 
 
 !urxvt color scheme:
-URxvt.transparent:  true
 URxvt*background:   #2B2B2B
 URxvt*foreground:   #DEDEDE
 URxvt*colorUL:      #86a2b0
-
-!==============!
-!=>  Xcursor <=!
-!==============!
-
-Xcursor.theme:      Vanilla-DMZ-AA
 
 !===============!
 !=>  Xft font <=!
@@ -33,11 +26,9 @@ Xft*dpi:            96
 Xft*antialias:      true
 Xft*hinting:        full
 
-
 !==============!
 !=>  Colours <=!
 !==============!
-
 This theme is: Some random one from the Arch forums
 ! black
 *color0:       #2E3436
