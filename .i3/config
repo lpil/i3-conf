@@ -140,7 +140,7 @@ bar {
   status_command i3status
     colors {
       statusline #DEDEDE
-      background #2B2B2B
+      background #303030
       # focused_workspace $gray2 $gray2 #FFFFFF
       # inactive_workspace $gray1 $gray1 #AAAAAA
     }
@@ -151,4 +151,4 @@ bar {
 #############################
 
 # Set x root window (background) colour
-exec --no-startup-id xsetroot -solid "#2B2B2B"
+exec --no-startup-id xsetroot -solid "#303030"

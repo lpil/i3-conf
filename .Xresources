@@ -1,40 +1,44 @@
 !=================================!
 !=> rxvt-unicode terminal stuff <=!
 !=================================!
-URxvt.saveLines:    2048
-URxvt.visualBell:   false
-URxvt.urgentOnBell: true
+URxvt*.saveLines:    2048
+URxvt*.visualBell:   false
+URxvt*.urgentOnBell: true
 
-URxvt.font:         xft:Droid Sans Mono:size=10
-URxvt.boldFont:     xft:Droid Sans Mono:bold:size=10
-URxvt.scrollBar:    false
-URxvt.fading:       10
+URxvt*.font:         xft:Droid Sans Mono:size=10
+URxvt*.boldFont:     xft:Droid Sans Mono:bold:size=10
+URxvt*.scrollBar:    false
+! Color to fade to
+URxvt*.fadeColor:    #000000
+! Percentage to fade towards fadeColor
+URxvt*.fading:       5
 
 ! enabling clickable links:
-URxvt.urlLauncher:    /usr/bin/firefox
-URxvt.matcher.button: 1 
+URxvt*.urlLauncher:    /usr/bin/www-browser
+URxvt*.matcher.button: 1
 
 ! urxvt color scheme:
-URxvt*background:   #212121
-URxvt*foreground:   #DEDEDE
-URxvt*colorUL:      #86a2b0
+URxvt*.background:   #323232
+URxvt*.foreground:   #DEDEDE
+URxvt*.colorUL:      #86a2b0
 
 ! pseudo transparency
-URxvt*transparent:  true
-URxvt*shading:      15
+URxvt*.transparent:  true
+! 0-99 darkens, 101-200 lightens
+URxvt*.shading:      80
 
 !==============!
 !=> Xft font <=!
 !==============!
-Xft*dpi:            96
-Xft*antialias:      true
-Xft*hinting:        full
+Xft*.dpi:            96
+Xft*.antialias:      true
+Xft*.hinting:        full
 
 !=============!
 !=> Colours <=!
 !=============!
 
-This theme is: Some random one from the Arch forums tweaked
+! This theme is: rand Arch forums tweaked
 ! black
 *color0:       #212121
 *color8:       #555753
@@ -59,29 +63,3 @@ This theme is: Some random one from the Arch forums tweaked
 ! white
 *color7:       #DEDEDE
 *color15:      #EEEEEC
-
-! This theme is: Some random one from the Arch forums
-! ! black
-! *color0:       #2E3436
-! *color8:       #555753
-! ! red
-! *color1:       #CC0000
-! *color9:       #EF2929
-! ! green
-! *color2:       #4E9A06
-! *color10:      #8AE234
-! ! yellow
-! *color3:       #C4A000
-! *color11:      #FCE94F
-! ! blue
-! *color4:       #3465A4
-! *color12:      #729FCF
-! ! magenta
-! *color5:       #75507B
-! *color13:      #AD7FA8
-! ! cyan
-! *color6:       #06989A
-! *color14:      #34E2E2
-! ! white
-! *color7:       #D3D7CF
-! *color15:      #EEEEEC
