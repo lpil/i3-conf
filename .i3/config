@@ -157,3 +157,7 @@ exec --no-startup-id xsetroot -solid "#303030"
 exec --no-startup-id xmodmap -e "remove lock = Caps_Lock"
 # Disable caps lock
 exec --no-startup-id setxkbmap -option ctrl:nocaps
+
+# Redshift monitor color modulation
+# lat:lon for London, day temp neutral (6500K)
+exec --no-startup-id redshift -l 51:0 -t 6500:4500
