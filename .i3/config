@@ -6,8 +6,8 @@ font pango:droid sans mono 8
 
 # Window decoration
 # <normal|1pixel|none|pixel>
-new_window  pixel
-new_float   pixel
+new_window  pixel 2
+new_float   pixel 2
 
 ################
 #=> Bindings <=#
@@ -161,3 +161,8 @@ exec --no-startup-id setxkbmap -option ctrl:nocaps
 # Redshift monitor color modulation
 # lat:lon for London, day temp neutral (6500K)
 exec --no-startup-id redshift -l 51:0 -t 6500:4500
+
+# Keyboard refresh rate
+exec --no-startup-id xset r rate 175 35
+# Turn off system bell
+exec --no-startup-id xset b off
