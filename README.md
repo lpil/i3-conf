@@ -3,11 +3,7 @@ i3_config
 
 My i3 desktop.
 
-Tested on Debian Jessie with i3 version 4.7
-
-## Features
-
-* Caps lock $mod
+Tested on Debian Jessie
 
 ## Dependencies
 
@@ -24,5 +20,4 @@ Tested on Debian Jessie with i3 version 4.7
 | ---- | ----- |
 | cursor theme | DMZ |
 | editor | vim |
-| fm | vifm |
 | irc | weechat |
