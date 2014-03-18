@@ -152,3 +152,8 @@ bar {
 
 # Set x root window (background) colour
 exec --no-startup-id xsetroot -solid "#303030"
+
+# Turn off caps lock
+exec --no-startup-id xmodmap -e "remove lock = Caps_Lock"
+# Disable caps lock
+exec --no-startup-id setxkbmap -option ctrl:nocaps
