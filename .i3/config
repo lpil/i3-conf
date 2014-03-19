@@ -48,8 +48,7 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+b split h
-
+bindsym $mod+c split h
 # split in vertical orientation
 bindsym $mod+v split v
 
@@ -74,6 +73,10 @@ bindsym $mod+z focus child
 
 # focus the next urgent container, latest first
 bindsym $mod+u [urgent="latest"] focus
+
+# i3 quickswitch python script
+# (github.com/proxypoke/quickswitch-for-i3)
+bindsym $mod+Tab exec --no-startup-id quickswitch.py
 
 # switch to workspace
 bindsym $mod+1 workspace 1
