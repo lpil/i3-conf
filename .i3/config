@@ -143,12 +143,12 @@ mode "resize" {
 # finds out, if available)
 bar {
   status_command i3status
-    colors {
-      statusline #DEDEDE
-      background #303030
-      # focused_workspace $gray2 $gray2 #FFFFFF
-      # inactive_workspace $gray1 $gray1 #AAAAAA
-    }
+  colors {
+    statusline #DEDEDE
+    background #303030
+    # focused_workspace $gray2 $gray2 #FFFFFF
+    inactive_workspace #404040 #303030 #DEDEDE
+  }
 }
 
 #############################
