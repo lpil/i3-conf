@@ -20,4 +20,4 @@ Tested on Debian Jessie
 | ---- | ----- |
 | cursor theme | DMZ |
 | editor | vim |
-| irc | weechat |
+| file manager | SpaceFM |

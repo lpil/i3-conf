@@ -87,6 +87,12 @@ export EDITOR="/usr/local/bin/vim"
 alias pd='echo $PWD > ~/.lastdir'
 alias gd='cd "$(cat ~/.lastdir)"'
 
+####################
+# Handy bell alias #
+####################
+
+alias bell='echo -ne \\a'
+
 #################
 # Louis' Prompt #
 #################
