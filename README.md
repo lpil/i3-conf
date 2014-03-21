@@ -21,3 +21,4 @@ Tested on Debian Jessie
 | cursor theme | DMZ |
 | editor | vim |
 | file manager | SpaceFM |
+| clipboard manager | clipit |
