@@ -18,7 +18,9 @@ Tested on Debian Jessie
 ### Recommended
 | What | Which |
 | ---- | ----- |
+| clipboard manager | clipit |
 | cursor theme | DMZ |
 | editor | vim |
+| eye balm | redshif |
 | file manager | SpaceFM |
-| clipboard manager | clipit |
+| media player | mpd + mpc (+ ncmpcpp) |
