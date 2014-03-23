@@ -78,7 +78,7 @@ fi
 # Shell Variables #
 ###################
 
-export PATH="$PATH:/Users/$USER/bin"
+export PATH="$PATH:~/bin"
 export EDITOR="/usr/local/bin/vim"
 
 #####################
