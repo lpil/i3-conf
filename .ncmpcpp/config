@@ -1,0 +1,18 @@
+## UI config
+
+user_interface = "alternative" (classic/alternative)
+
+playlist_display_mode = "columns" (classic/columns)
+browser_display_mode = "columns" (classic/columns)
+search_engine_display_mode = "columns" (classic/columns)
+playlist_editor_display_mode = "columns" (classic/columns)
+
+display_volume_level = "yes"
+display_bitrate = "yes"
+
+## Misc Behaviour
+
+ignore_leading_the = "yes"
+ask_before_clearing_main_playlist = "yes"
+autocenter_mode = "yes"
+mpd_crossfade_time = "1"
