@@ -116,7 +116,7 @@ bindsym $mod+Shift+R restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+E exit
 
-# resize window
+# resize window mode
 bindsym $mod+r mode "resize"
 mode "resize" {
 # These bindings trigger as soon as you enter the resize mode
@@ -137,6 +137,12 @@ mode "resize" {
 # back to normal: Enter or Escape
   bindsym Return mode "default"
   bindsym Escape mode "default"
+}
+
+# Key pass through mode
+bindsym $mod+Escape mode "key pass-through"
+mode "key pass-through" {
+  bindsym $mod+Escape mode "default"
 }
 
 # mpd / mpc
