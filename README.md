@@ -21,6 +21,6 @@ Tested on Debian Jessie
 | clipboard manager | clipit |
 | cursor theme | DMZ |
 | editor | vim |
-| eye balm | redshif |
+| eye balm | redshift |
 | file manager | SpaceFM |
 | media player | mpd + mpc (+ ncmpcpp) |
