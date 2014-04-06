@@ -119,29 +119,27 @@ bindsym $mod+Shift+E exit
 # resize window mode
 bindsym $mod+r mode "resize"
 mode "resize" {
-# These bindings trigger as soon as you enter the resize mode
-
-# Pressing left will shrink the window’s width.
-# Pressing right will grow the window’s width.
-# Pressing up will shrink the window’s height.
-# Pressing down will grow the window’s height.
+  # Pressing left will shrink the window’s width.
+  # Pressing right will grow the window’s width.
+  # Pressing up will shrink the window’s height.
+  # Pressing down will grow the window’s height.
   bindsym h resize shrink width 10 px or 5 ppt
   bindsym j resize grow height 10 px or 5 ppt
   bindsym k resize shrink height 10 px or 5 ppt
   bindsym l resize grow width 10 px or 5 ppt
-# same bindings, but for the arrow keys
+  # same bindings, but for the arrow keys
   bindsym Left resize shrink width 10 px or 5 ppt
   bindsym Down resize grow height 10 px or 5 ppt
   bindsym Up resize shrink height 10 px or 5 ppt
   bindsym Right resize grow width 10 px or 5 ppt
-# back to normal: Enter or Escape
+  # back to normal: Enter or Escape
   bindsym Return mode "default"
   bindsym Escape mode "default"
 }
 
 # Key pass through mode
-bindsym $mod+Escape mode "key pass-through"
-mode "key pass-through" {
+bindsym $mod+Escape mode "pass-through"
+mode "pass-through" {
   bindsym $mod+Escape mode "default"
 }
 
@@ -195,3 +193,4 @@ exec --no-startup-id clipit -n
 
 # mpd
 exec --no-startup-id mpd
+exec --no-startup-id mpc single off
