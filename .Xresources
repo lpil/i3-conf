@@ -13,10 +13,6 @@ URxvt*.fadeColor:    #000000
 ! Percentage to fade towards fadeColor
 URxvt*.fading:       5
 
-! enabling clickable links:
-URxvt*.urlLauncher:    /usr/bin/www-browser
-URxvt*.matcher.button: 1
-
 ! urxvt color scheme:
 URxvt*.background:   #323232
 URxvt*.foreground:   #DEDEDE
