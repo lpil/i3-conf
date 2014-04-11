@@ -193,4 +193,4 @@ exec --no-startup-id clipit -n
 
 # mpd
 exec --no-startup-id mpd
-exec --no-startup-id mpc single off
+exec --no-startup-id sleep 1 && mpc single off
