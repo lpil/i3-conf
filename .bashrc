@@ -81,7 +81,7 @@ fi
 ###################
 
 export PATH="$PATH:~/bin"
-export EDITOR="/usr/local/bin/vim"
+# export EDITOR="/usr/local/bin/vim"
 
 #####################
 # Quick dir sharing #
