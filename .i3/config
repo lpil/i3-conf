@@ -168,29 +168,4 @@ bar {
 #=> Autoload applications <=#
 #############################
 
-# Set x root window (background) colour
-exec --no-startup-id xsetroot -solid "#303030"
-
-# Turn off caps lock
-exec --no-startup-id xmodmap -e "remove lock = Caps_Lock"
-# Disable caps lock
-exec --no-startup-id setxkbmap -option ctrl:nocaps
-
-# Redshift monitor color modulation
-# lat:lon for London, day temp neutral (6500K)
-exec --no-startup-id redshift -l 51:0 -t 6500:4500
-
-# Keyboard refresh rate
-exec --no-startup-id xset r rate 175 35
-# Turn off system bell
-exec --no-startup-id xset b off
-
-# Hide mouse cursor when not in use
-exec --no-startup-id unclutter
-
-# Clipboard manager
-exec --no-startup-id clipit -n
-
-# mpd
-exec --no-startup-id mpd
-exec --no-startup-id sleep 1 && mpc single off
+exec --no-startup-id ~/.autostart.sh
