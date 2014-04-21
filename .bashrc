@@ -113,3 +113,6 @@ build_ps1() {
   echo "${prompt_color}\u${host} \[\e[1;34m\]\w\[\e[0m\] \$ "
 }
 PS1=$(build_ps1)
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
