@@ -49,9 +49,9 @@ if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     alias ls='ls --color=auto'
 
-    alias grep='grep --color=auto'
-    alias fgrep='fgrep --color=auto'
-    alias egrep='egrep --color=auto'
+    alias grep='grep -i --color=auto'
+    alias fgrep='fgrep -i --color=auto'
+    alias egrep='egrep -i --color=auto'
 fi
 
 alias locate='locate -i'
@@ -83,21 +83,23 @@ fi
 export PATH="$PATH:~/bin"
 # export EDITOR="/usr/local/bin/vim"
 
-#####################
-# Quick dir sharing #
-#####################
+###########
+# Aliases #
+###########
+
+# Quick dir sharing
 alias pd='echo $PWD > ~/.lastdir'
 alias gd='cd "$(cat ~/.lastdir)"'
 
-####################
-# Handy bell alias #
-####################
-
+# Ring the bell
 alias bell='echo -e \\a'
 
-#################
-# Louis' Prompt #
-#################
+# Internet up?
+alias up='ping 4.2.2.2'
+
+##########
+# Prompt #
+##########
 
 # Set prompt.
 # Local users have a green prompt
