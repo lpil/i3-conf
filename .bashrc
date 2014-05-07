@@ -44,25 +44,13 @@ xterm*|rxvt*)
     ;;
 esac
 
-# enable color support of ls and also add handy aliases
-if [ -x /usr/bin/dircolors ]; then
-    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls --color=auto'
-
-    alias grep='grep -i --color=auto'
-    alias fgrep='fgrep -i --color=auto'
-    alias egrep='egrep -i --color=auto'
-fi
-
-alias locate='locate -i'
-
 # Alias definitions.
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
 
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
+if [ -f ~/.bash_aliases.sh ]; then
+    . ~/.bash_aliases.sh
 fi
 
 # enable programmable completion features (you don't need to enable
@@ -82,20 +70,6 @@ fi
 
 export PATH="$PATH:~/bin"
 # export EDITOR="/usr/local/bin/vim"
-
-###########
-# Aliases #
-###########
-
-# Quick dir sharing
-alias pd='echo $PWD > ~/.lastdir'
-alias gd='cd "$(cat ~/.lastdir)"'
-
-# Ring the bell
-alias bell='echo -e \\a'
-
-# Internet up?
-alias up='ping 4.2.2.2'
 
 ##########
 # Prompt #
