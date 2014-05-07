@@ -23,6 +23,7 @@ Tested on Debian Jessie
 | editor | vim |
 | eye balm | redshift |
 | file manager | SpaceFM |
-| Notifications | libnotify-bin (notify-send) |
 | media player | mpd + mpc (+ ncmpcpp) |
 | mouse hider | unclutter |
+| notifications | dunst |
+| notifications | libnotify-bin (notify-send) |
