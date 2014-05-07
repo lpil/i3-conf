@@ -148,6 +148,7 @@ mode "pass-through" {
 bindcode $mod+34 exec --no-startup-id mpc toggle  # [
 bindcode $mod+35 exec --no-startup-id mpc next    # ]
 bindsym $mod+p exec --no-startup-id notify-send "$(mpc -f "%artist% - %title%[ ([%album% ][%date%])]" | head -2)"
+bindsym $mod+o exec --no-startup-id notify-send "$(mpc playlist -f "%position%> %artist% - %title%" | head -9)"
 
 # volume control
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -q set Master 2dB+ unmute && killall -SIGUSR1 i3status
