@@ -29,3 +29,6 @@ alias mplayerq='mplayer --really-quiet'
 
 # apt
 alias agupdate='sudo apt-get update && sudo apt-get dist-upgrade'
+
+# up a dir
+alias ..='cd ..'

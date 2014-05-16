@@ -71,24 +71,40 @@ fi
 export PATH="$PATH:~/bin"
 # export EDITOR="/usr/local/bin/vim"
 
-##########
-# Prompt #
-##########
+#################
+# Louis' Prompt #
+#################
 
-# Set prompt.
 # Local users have a green prompt
 # Remote users have a yellow prompt
 # `root` has a red prompt
 # If we are connected remotely, `@<hostname>` shows first.
+
+# Displays git repo status info
+source ~/.git_prompt.sh
+export GIT_PS1_SHOWCOLORHINTS=1
+export GIT_PS1_SHOWDIRTYSTATE=1
+
 build_ps1() {
-  local prompt_color='\[\e[1;32m\]'
+  # Green default prompt
+  local color='\[\e[1;32m\]'
   local host=''
-  [[ $SSH_TTY ]] && prompt_color='\[\e[1;33m\]'
+
+  # If ssh, yellow prompt, include host name
+  [[ $SSH_TTY ]] && color='\[\e[1;33m\]'
   [[ $SSH_TTY ]] && host="@$HOSTNAME"
-  [[ $UID -eq 0 ]] && prompt_color='\[\e[1;31m\]'
-  echo "${prompt_color}\u${host} \[\e[1;34m\]\w\[\e[0m\] \$ "
+
+  # If root, red prompt
+  [[ $UID -eq 0 ]] && color='\[\e[1;31m\]'
+
+  # Build
+  local part1="${color}\u${host} "
+  local part2="\[\e[0;34m\]\w ${color}"
+  local part3='$(__git_ps1 "[%s]") \[\e[m\]\$'
+  echo $part1$part2$part3' '
 }
 PS1=$(build_ps1)
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+# Add RVM to PATH for scripting
+PATH=$PATH:$HOME/.rvm/bin
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
