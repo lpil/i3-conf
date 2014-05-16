@@ -99,8 +99,8 @@ build_ps1() {
 
   # Build
   local part1="${color}\u${host} "
-  local part2="\[\e[0;34m\]\w ${color}"
-  local part3='$(__git_ps1 "[%s]") \[\e[m\]\$'
+  local part2="\[\e[0;34m\]\w${color}"
+  local part3='$(__git_ps1 " [%s]") \[\e[m\]\$'
   echo $part1$part2$part3' '
 }
 PS1=$(build_ps1)
