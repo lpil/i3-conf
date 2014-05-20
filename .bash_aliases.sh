@@ -18,8 +18,10 @@ alias agupdate='sudo apt-get update && sudo apt-get dist-upgrade'
 alias pd='echo $PWD > ~/.lastdir'
 alias gd='cd "$(cat ~/.lastdir)"'
 
-# Up a dir
+# Up dirs
 alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
 
 # Go to ~/downloads
 alias dl='cd ~/downloads'
