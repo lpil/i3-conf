@@ -10,7 +10,10 @@ setxkbmap -option ctrl:nocaps &
 
 # Redshift monitor color modulation
 # lat:lon for London, day temp neutral (6500K)
-redshift -l 51:0 -t 6500:4500 &
+pidof redshift >& /dev/null
+if [ $? -ne 0 ]; then
+  redshift -l 51:0 -t 6500:4500 &
+fi
 
 # Keyboard refresh rate
 xset r rate 175 35 &
@@ -25,11 +28,25 @@ if egrep -iq 'touchpad' /proc/bus/input/devices; then
 fi
 
 # Hide mouse cursor when not in use
-unclutter &
+pidof unclutter >& /dev/null
+if [ $? -ne 0 ]; then
+  unclutter &
+fi
 
 # Clipboard manager
-clipit -n &
+pidof clipit >& /dev/null
+if [ $? -ne 0 ]; then
+  clipit -n &
+fi
+
 
 # mpd
-(mpd && sleep 4 && mpc single off) &
-
+pidof mpd >& /dev/null
+if [ $? -ne 0 ]; then
+  (mpd && sleep 4 && mpc single off) &
+fi
+# mpd librefm scrobbling
+pidof mpdscribble >& /dev/null
+if [ $? -ne 0 ]; then
+  (cd ~ && mpdscribble) &
+fi
