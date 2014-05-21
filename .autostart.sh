@@ -48,5 +48,5 @@ fi
 # mpd librefm scrobbling
 pidof mpdscribble >& /dev/null
 if [ $? -ne 0 ]; then
-  (cd ~ && mpdscribble) &
+  (bash -c "cd ~ && mpdscribble") &
 fi
