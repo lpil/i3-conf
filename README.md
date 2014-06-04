@@ -28,3 +28,4 @@ Tested on Debian Jessie
 | mouse hider | unclutter |
 | notifications | dunst |
 | notifications | libnotify-bin (notify-send) |
+| web browser | dwb |
