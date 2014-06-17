@@ -24,6 +24,7 @@ Tested on Debian Jessie
 | eye balm | redshift |
 | file manager | SpaceFM |
 | media player | mpd + mpc (+ ncmpcpp) |
+| media player | mplayer |
 | media scrobbling | mpdscribble |
 | mouse hider | unclutter |
 | notifications | dunst |

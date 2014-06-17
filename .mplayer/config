@@ -1,0 +1,6 @@
+[default]
+stop-xscreensaver=yes
+
+# OSD progress bar
+progbar-align=0
+osd-duration=2500
