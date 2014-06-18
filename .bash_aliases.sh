@@ -26,6 +26,9 @@ alias ....='cd ../../..'
 # Go to ~/downloads
 alias dl='cd ~/downloads'
 
+# i3lock black background
+alias i3lock='i3lock -c 303030'
+
 #################
 # Default flags #
 #################
