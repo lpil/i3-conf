@@ -10,9 +10,17 @@ alias x='startx'
 # apt
 alias agupdate='sudo apt-get update && sudo apt-get dist-upgrade'
 
-########################
-# Directory navigation #
-########################
+# ls
+alias l='ls'
+alias ll='ls -lh'
+alias la='ls -a'
+alias lla='ls -lah'
+
+# i3lock black background
+alias i3lock='i3lock -c 303030'
+
+# cd
+alias c='cd'
 
 # Quick dir sharing between terms
 alias pd='echo $PWD > ~/.lastdir'
@@ -25,9 +33,6 @@ alias ....='cd ../../..'
 
 # Go to ~/downloads
 alias dl='cd ~/downloads'
-
-# i3lock black background
-alias i3lock='i3lock -c 303030'
 
 #################
 # Default flags #
