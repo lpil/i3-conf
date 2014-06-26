@@ -47,6 +47,9 @@ if [ -x /usr/bin/dircolors ]; then
     alias fgrep='fgrep -i --color=auto'
     alias egrep='egrep -i --color=auto'
 fi
+if [ $(uname) = Darwin ]; then
+  alias ls='ls -G'
+fi
 
 # Case insensitive locate
 alias locate='locate -i'
