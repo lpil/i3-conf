@@ -7,6 +7,9 @@ alias up='ping 4.2.2.2'
 # startx
 alias x='startx'
 
+# vim
+alias v='vim'
+
 # apt
 alias agupdate='sudo apt-get update && sudo apt-get dist-upgrade'
 
