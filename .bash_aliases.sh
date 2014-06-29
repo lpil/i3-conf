@@ -50,6 +50,8 @@ if [ -x /usr/bin/dircolors ]; then
   alias fgrep='fgrep -i --color=auto'
   alias egrep='egrep -i --color=auto'
   alias tree='tree -C'
+
+  alias less='less -R'
 fi
 if [ $(uname) == Darwin ]; then
   alias ls='ls -G'
