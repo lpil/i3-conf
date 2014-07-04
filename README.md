@@ -23,10 +23,10 @@ Tested on Debian Jessie
 | editor | vim |
 | eye balm | redshift |
 | file manager | SpaceFM |
-| media player | mpd + mpc (+ ncmpcpp) |
-| media player | mplayer |
+| media player | mpv |
 | media scrobbling | mpdscribble |
 | mouse hider | unclutter |
+| music player | mpd + mpc (+ ncmpcpp) |
 | notifications | dunst |
 | notifications | libnotify-bin (notify-send) |
 | web browser | dwb |
