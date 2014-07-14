@@ -29,4 +29,4 @@ Tested on Debian Jessie
 | music player | mpd + mpc (+ ncmpcpp) |
 | notifications | dunst |
 | notifications | libnotify-bin (notify-send) |
-| web browser | dwb |
+| web browser | Firefox with Vimperator |
