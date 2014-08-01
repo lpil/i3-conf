@@ -2,7 +2,7 @@
 alias bell='echo -e \\a'
 
 # Internet up?
-alias up='ping 4.2.2.2'
+alias up='time ping 4.2.2.2'
 
 # startx
 alias x='startx'
@@ -60,3 +60,6 @@ fi
 
 # Case insensitive locate
 alias locate='locate -i'
+
+# feh images fit window size
+alias feh='feh -.'
