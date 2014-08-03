@@ -10,6 +10,9 @@ font pango:droid sans mono 8
 new_window  pixel 3
 new_float   pixel 3
 
+# We shouldn't be using the mouse, so mouse follow is an annoyance
+focus_follows_mouse no
+
 ################
 #=> Bindings <=#
 ################
