@@ -13,6 +13,8 @@ new_float   pixel 3
 # We shouldn't be using the mouse, so mouse follow is an annoyance
 focus_follows_mouse no
 
+hide_edge_borders none
+
 ################
 #=> Bindings <=#
 ################
@@ -140,22 +142,28 @@ mode "resize" {
   bindsym Escape mode "default"
 }
 
-# Key pass through mode
-bindsym $mod+Escape mode "pass-through"
-mode "pass-through" {
-  bindsym $mod+Escape mode "default"
-}
-
 # mpd / mpc
 bindcode $mod+34 exec --no-startup-id mpc toggle  # [
 bindcode $mod+35 exec --no-startup-id mpc next    # ]
 bindsym $mod+p exec --no-startup-id notify-send "$(mpc -f "%artist% - %title%[ ([%album% ][%date%])]" | head -2)"
 bindsym $mod+o exec --no-startup-id notify-send "$(mpc playlist -f "%position%> %artist% - %title%" | head -9)"
+# Open ncmpcpp in scratchpad
+bindsym $mod+m exec --no-startup-id urxvt -name scratchpad -e ncmpcpp
 
 # volume control
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -q set Master 2dB+ unmute && killall -SIGUSR1 i3status
 bindsym XF86AudioLowerVolume exec --no-startup-id amixer -q set Master 2dB- unmute && killall -SIGUSR1 i3status
 bindsym XF86AudioMute exec amixer -q set Master toggle && killall -SIGUSR1 i3status
+
+#############
+#=> Modes <=#
+#############
+
+# Key pass through mode
+bindsym $mod+Escape mode "pass-through"
+mode "pass-through" {
+  bindsym $mod+Escape mode "default"
+}
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
@@ -168,6 +176,16 @@ bar {
     inactive_workspace #404040 #303030 #DEDEDE
   }
 }
+
+###############
+#=> Classes <=#
+###############
+
+# Scratchpad instances should be scratchpad
+for_window [instance="scratchpad"] move window to scratchpad, scratchpad show
+
+# Google hangouts
+for_window [class="Chromium" instance="crx_nckgahadagoaajjgafhacjanaoiihapd"] floating enable, move window to workspace current
 
 #############################
 #=> Autoload applications <=#
