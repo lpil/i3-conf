@@ -145,8 +145,8 @@ mode "resize" {
 # mpd / mpc
 bindcode $mod+34 exec --no-startup-id mpc toggle  # [
 bindcode $mod+35 exec --no-startup-id mpc next    # ]
-bindsym $mod+p exec --no-startup-id notify-send "$(mpc -f "%artist% - %title%[ ([%album% ][%date%])]" | head -2)"
-bindsym $mod+o exec --no-startup-id notify-send "$(mpc playlist -f "%position%> %artist% - %title%" | head -9)"
+# bindsym $mod+p exec --no-startup-id notify-send "$(mpc -f "%artist% - %title%[ ([%album% ][%date%])]" | head -2)"
+# bindsym $mod+o exec --no-startup-id notify-send "$(mpc playlist -f "%position%> %artist% - %title%" | head -9)"
 # Open ncmpcpp in scratchpad
 bindsym $mod+m exec --no-startup-id urxvt -name scratchpad -e ncmpcpp
 
