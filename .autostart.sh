@@ -46,7 +46,7 @@ xset s off
 # don't blank the video device
 xset s noblank
 # disable DPMS (Energy Star) features.
-# xset -dpms
+xset -dpms
 
 # mpd
 pidof mpd >& /dev/null
