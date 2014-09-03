@@ -9,6 +9,7 @@ alias x='startx'
 
 # vim
 alias v='vim'
+alias n='nvim'
 
 # apt
 alias agupdate='sudo apt-get update && sudo apt-get dist-upgrade'
