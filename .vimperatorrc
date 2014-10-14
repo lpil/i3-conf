@@ -19,7 +19,7 @@ set editor="x-terminal-emulator -e vim"
 set gui=nonavigation
 
 " Colour
-colorscheme molokai
+silent colorscheme molokai
 
 " Turn off the annoying paste key
 nnoremap p <nop>
