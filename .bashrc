@@ -111,5 +111,3 @@ PATH=$PATH:$HOME/.rvm/bin
 
 export NVM_DIR="/home/louis/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
-echo 'hello world!'
