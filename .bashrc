@@ -68,8 +68,8 @@ fi
 # Shell Variables #
 ###################
 
-export PATH="$PATH:~/bin"
-# export EDITOR="/usr/local/bin/vim"
+export PATH="$PATH:$HOME/bin"
+export PATH="$PATH:$HOME/.cabal/bin"
 
 #################
 # Louis' Prompt #
