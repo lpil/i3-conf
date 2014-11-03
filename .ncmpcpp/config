@@ -13,6 +13,6 @@ display_bitrate = "yes"
 ## Misc Behaviour
 
 ignore_leading_the = "yes"
-ask_before_clearing_main_playlist = "yes"
+ask_before_clearing_playlists = "yes"
 autocenter_mode = "yes"
 mpd_crossfade_time = "1"
