@@ -64,3 +64,6 @@ alias locate='locate -i'
 
 # feh images fit window size
 alias feh='feh -.'
+
+# ruby: bundle exec shorthands
+alias be='bundle exec'
