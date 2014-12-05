@@ -1,0 +1,4 @@
+keymap / ISEARCH
+keymap ? ISEARCH_BACK
+
+keymap b BACK
