@@ -3,3 +3,5 @@ keymap ? ISEARCH_BACK
 
 keymap b BACK
 keymap r RELOAD
+
+keymap a NOTHING
