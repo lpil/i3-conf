@@ -1,5 +1,8 @@
 # Prefix
 set $mod Mod1
+set $super Mod4
+set $alt Mod1
+set $ctrl Control
 
 # font for window titles. ISO 10646 = Unicode
 font pango:droid sans mono 8
@@ -37,11 +40,16 @@ bindsym $mod+h focus left
 bindsym $mod+j focus down
 bindsym $mod+k focus up
 bindsym $mod+l focus right
+# With ctrl
+bindsym $ctrl+h focus left
+bindsym $ctrl+j focus down
+bindsym $ctrl+k focus up
+bindsym $ctrl+l focus right
 # alternatively, you can use the cursor keys:
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
-bindsym $mod+Right focus right
+# bindsym $mod+Left focus left
+# bindsym $mod+Down focus down
+# bindsym $mod+Up focus up
+# bindsym $mod+Right focus right
 
 # move focused window
 bindsym $mod+Shift+H move left
@@ -82,6 +90,16 @@ bindsym $mod+z focus child
 bindsym $mod+u [urgent="latest"] focus
 
 # switch to workspace
+bindsym $ctrl+1 workspace 1
+bindsym $ctrl+2 workspace 2
+bindsym $ctrl+3 workspace 3
+bindsym $ctrl+4 workspace 4
+bindsym $ctrl+5 workspace 5
+bindsym $ctrl+6 workspace 6
+bindsym $ctrl+7 workspace 7
+bindsym $ctrl+8 workspace 8
+bindsym $ctrl+9 workspace 9
+bindsym $ctrl+0 workspace 10
 bindsym $mod+1 workspace 1
 bindsym $mod+2 workspace 2
 bindsym $mod+3 workspace 3
@@ -93,8 +111,8 @@ bindsym $mod+8 workspace 8
 bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
 # switch to previous/next workspace
-bindsym Mod4+Left workspace prev
-bindsym Mod4+Right workspace next
+# bindsym Mod4+Left workspace prev
+# bindsym Mod4+Right workspace next
 
 # move focused container to workspace
 bindsym $mod+Shift+exclam move container to workspace 1
@@ -108,8 +126,8 @@ bindsym $mod+Shift+asterisk move container to workspace 8
 bindsym $mod+Shift+parenleft move container to workspace 9
 bindsym $mod+Shift+parenright move container to workspace 10
 # move to previous/next workspace
-bindsym Mod4+Shift+Left move container to workspace prev
-bindsym Mod4+Shift+Right move container to workspace next
+# bindsym Mod4+Shift+Left move container to workspace prev
+# bindsym Mod4+Shift+Right move container to workspace next
 
 # Lock screen
 bindsym $mod+backslash exec i3lock -c 303030
