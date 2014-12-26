@@ -105,9 +105,5 @@ build_ps1() {
 }
 PS1=$(build_ps1)
 
-# Add RVM to PATH for scripting
-PATH=$PATH:$HOME/.rvm/bin
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
-
 export NVM_DIR="/home/louis/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
