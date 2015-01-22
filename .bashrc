@@ -64,10 +64,11 @@ if ! shopt -oq posix; then
   fi
 fi
 
-###################
-# Shell Variables #
-###################
+########
+# Path #
+########
 
+export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH="$PATH:$HOME/bin"
 export PATH="$PATH:$HOME/.cabal/bin"
 
@@ -105,5 +106,13 @@ build_ps1() {
 }
 PS1=$(build_ps1)
 
+##################
+#  Env managers  #
+##################
+
+# Node nvm
 export NVM_DIR="/home/louis/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+
+# Ruby rbenv
+eval "$(rbenv init -)"
