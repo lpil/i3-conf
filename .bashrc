@@ -70,7 +70,7 @@ fi
 
 export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH="$PATH:$HOME/bin"
-export PATH="$PATH:$HOME/.cabal/bin"
+export PATH="$HOME/.cabal/bin:$PATH"
 
 #################
 # Louis' Prompt #
