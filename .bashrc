@@ -69,7 +69,7 @@ fi
 ########
 
 export PATH="$HOME/.rbenv/bin:$PATH"
-export PATH="$PATH:$HOME/bin"
+export PATH="$HOME/bin:$PATH"
 export PATH="$HOME/.cabal/bin:$PATH"
 
 #################
@@ -116,3 +116,5 @@ export NVM_DIR="/home/louis/.nvm"
 
 # Ruby rbenv
 eval "$(rbenv init -)"
+
+export PGDATA="$HOME/.db/postgres/data"
