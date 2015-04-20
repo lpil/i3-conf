@@ -54,11 +54,6 @@ if [ -x /usr/bin/dircolors ]; then
 
   alias less='less -R'
 fi
-if [ $(uname) == Darwin ]; then
-  alias ls='ls -G'
-  alias tree='tree -C'
-  alias less='less -R'
-fi
 
 # Case insensitive locate
 alias locate='locate -i'
@@ -74,4 +69,13 @@ alias ber='bundle exec rake'
 alias serve='echo "ruby -run -e httpd . -p 4000"; ruby -run -e httpd . -p 4000'
 
 # Launch sublime in cwd
-alias sublime="open -a 'sublime text 2' ."
+alias sublime="open -a 'sublime text' ."
+
+
+# OSX
+if [ $(uname) == Darwin ]; then
+  alias ls='ls -G'
+  alias tree='tree -C'
+  alias less='less -R'
+  alias tulpn='sudo lsof -nP -iTCP -sTCP:LISTEN'
+fi
