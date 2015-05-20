@@ -25,7 +25,7 @@ if egrep -iq 'touchpad' /proc/bus/input/devices; then
   synclient VertEdgeScroll=1 &
   synclient VertTwoFingerScroll=0 &
   synclient TapButton1=0 &
-  synclient MinSpeed=2.5
+  synclient MinSpeed=3.5
   synclient MinSpeed=2.5
 fi
 
@@ -51,7 +51,7 @@ xset -dpms
 # mpd
 pidof mpd >& /dev/null
 if [ $? -ne 0 ]; then
-  (mpd && sleep 4 && mpc single off) &
+  (mpd && sleep 4 && mpc single off && mpc consume on) &
 fi
 # mpd librefm scrobbling
 pidof mpdscribble >& /dev/null
