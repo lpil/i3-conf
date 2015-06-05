@@ -1,0 +1,3 @@
+let blacklists = ["http://localhost/*"]
+set typelinkhints
+set numerichints
