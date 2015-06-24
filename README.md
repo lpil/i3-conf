@@ -1,9 +1,22 @@
-i3_config
+i3-config
 =========
 
 My i3 desktop.
 
 Tested on Debian Jessie
+
+## Linking dotfiles
+
+Homeshick is awesome.
+
+```sh
+git clone git://github.com/andsens/homeshick.git $HOME/.homesick/repos/homeshick
+~/.homesick/repos/homeshick/bin/homeshick clone git@github.com:lpil/i3-config
+~/.homesick/repos/homeshick/bin/homeshick link i3-config
+bash
+homeshick clone git@github.com:lpil/vimrc
+homeshick link vimrc
+```
 
 ## Dependencies
 
