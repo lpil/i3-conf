@@ -1,5 +1,5 @@
-i3-config
-=========
+i3-conf
+=======
 
 My i3 desktop.
 
@@ -13,7 +13,11 @@ Homeshick is awesome.
 git clone git://github.com/andsens/homeshick.git $HOME/.homesick/repos/homeshick
 ~/.homesick/repos/homeshick/bin/homeshick clone git@github.com:lpil/i3-config
 ~/.homesick/repos/homeshick/bin/homeshick link i3-config
-bash
+```
+
+Log in again. You'll need to install a ton of stuff before everything works.
+
+```
 homeshick clone git@github.com:lpil/vimrc
 homeshick link vimrc
 ```
@@ -35,11 +39,8 @@ homeshick link vimrc
 | cursor theme | DMZ |
 | editor | vim |
 | eye balm | redshift |
-| file manager | SpaceFM |
 | media player | mpv |
 | media scrobbling | mpdscribble |
 | mouse hider | unclutter |
 | music player | mpd + mpc (+ ncmpcpp) |
-| notifications | dunst |
-| notifications | libnotify-bin (notify-send) |
 | web browser | Firefox with Vimperator |
