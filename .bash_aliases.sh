@@ -70,6 +70,8 @@ alias serve='echo "ruby -run -e httpd . -p 4000"; ruby -run -e httpd . -p 4000'
 
 # Launch sublime in cwd
 alias sublime="open -a 'sublime text' ."
+# Launch gitx in cwd
+alias gitx="open -a 'gitx' ."
 
 
 # OSX
@@ -79,3 +81,10 @@ if [ $(uname) == Darwin ]; then
   alias less='less -R'
   alias tulpn='sudo lsof -nP -iTCP -sTCP:LISTEN'
 fi
+
+############
+#  reevoo  #
+############
+
+alias edb='knife data bag --secret-file /etc/chef/encrypted_data_bag_secret'
+alias kcu='knife cookbook upload'
