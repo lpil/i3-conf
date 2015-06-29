@@ -44,11 +44,6 @@ xterm*|rxvt*)
     ;;
 esac
 
-# Alias definitions.
-# You may want to put all your additions into a separate file like
-# ~/.bash_aliases, instead of adding them here directly.
-# See /usr/share/doc/bash-doc/examples in the bash-doc package.
-
 if [ -f ~/.bash_aliases.sh ]; then
     . ~/.bash_aliases.sh
 fi
@@ -64,17 +59,12 @@ if ! shopt -oq posix; then
   fi
 fi
 
-########
-# Path #
-########
-
-export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH="$HOME/bin:$PATH"
 export PATH="$HOME/.cabal/bin:$PATH"
 
-#################
-# Louis' Prompt #
-#################
+###########
+#  Prompt #
+###########
 
 # Local users have a green prompt
 # Remote users have a yellow prompt
@@ -106,15 +96,26 @@ build_ps1() {
 }
 PS1=$(build_ps1)
 
-##################
-#  Env managers  #
-##################
 
-# Node nvm
-export NVM_DIR="/home/louis/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+# Node nvm version manager
+if [ -d "$HOME/.nvm" ]; then
+  export NVM_DIR="/home/louis/.nvm"
+  [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+fi
 
-# Ruby rbenv
-eval "$(rbenv init -)"
+# Ruby rbenv version manager
+if [ -d "$HOME/.rbenv" ]; then
+  export PATH="$HOME/.rbenv/bin:$PATH"
+  eval "$(rbenv init -)"
+fi
 
-export PGDATA="$HOME/.db/postgres/data"
+# homeshick config manager
+if [ -d "$HOME/.homesick/repos/homeshick/bin" ]; then
+  export PATH="$HOME/.homesick/repos/homeshick/bin:$PATH"
+fi
+
+
+# My dumb postgres setup
+if [ -d "$HOME/.db/postgres" ]; then
+  export PGDATA="$HOME/.db/postgres/data"
+fi
