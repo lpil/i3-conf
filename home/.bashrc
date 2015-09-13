@@ -120,3 +120,8 @@ fi
 if [ -d "$HOME/.db/postgres" ]; then
   export PGDATA="$HOME/.db/postgres/data"
 fi
+
+# Start autojump on Debian
+if [ -d "/usr/share/autojump/autojump.sh" ]; then
+  source /usr/share/autojump/autojump.sh
+fi
