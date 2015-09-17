@@ -66,7 +66,7 @@ alias be='bundle exec'
 alias ber='bundle exec rake'
 
 # pop up server
-alias serve='echo "ruby -run -e httpd . -p 4000"; ruby -run -e httpd . -p 4000'
+alias serve='echo "ruby -run -e httpd . -p 4000" && ruby -run -e httpd . -p 4000'
 
 # Launch sublime in cwd
 alias sublime="open -a 'sublime text' ."
@@ -80,6 +80,9 @@ if [ $(uname) == Darwin ]; then
   alias tree='tree -C'
   alias less='less -R'
   alias tulpn='sudo lsof -nP -iTCP -sTCP:LISTEN'
+
+  MONGOD_COMMAND="mongod --config /usr/local/etc/mongod.conf --fork"
+  alias mongod.start='echo "$MONGOD_COMMAND" && $MONGOD_COMMAND'
 fi
 
 ############

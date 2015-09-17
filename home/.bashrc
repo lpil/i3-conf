@@ -125,3 +125,6 @@ fi
 if [ -d "/usr/share/autojump/autojump.sh" ]; then
   source /usr/share/autojump/autojump.sh
 fi
+
+# added by travis gem
+[ -f /Users/louis/.travis/travis.sh ] && source /Users/louis/.travis/travis.sh
