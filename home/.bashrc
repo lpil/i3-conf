@@ -122,7 +122,7 @@ if [ -d "$HOME/.db/postgres" ]; then
 fi
 
 # Start autojump on Debian
-if [ -d "/usr/share/autojump/autojump.sh" ]; then
+if [ -f "/usr/share/autojump/autojump.sh" ]; then
   source /usr/share/autojump/autojump.sh
 fi
 
