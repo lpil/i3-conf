@@ -98,16 +98,20 @@ build_ps1() {
 PS1=$(build_ps1)
 
 
-# Node nvm version manager
-if [ -d "$HOME/.nvm" ]; then
-  export NVM_DIR="/home/louis/.nvm"
-  [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
-fi
-
 # Ruby rbenv version manager
 if [ -d "$HOME/.rbenv" ]; then
   export PATH="$HOME/.rbenv/bin:$PATH"
   eval "$(rbenv init -)"
+fi
+# Node nodenv version manager
+if [ -d "$HOME/.nodenv" ]; then
+  export PATH="$HOME/.nodenv/bin:$PATH"
+  eval "$(nodenv init -)"
+fi
+# Elixir exenv version manager
+if [ -d "$HOME/.exenv" ]; then
+  export PATH="$HOME/.exenv/bin:$PATH"
+  eval "$(exenv init -)"
 fi
 
 # homeshick config manager
