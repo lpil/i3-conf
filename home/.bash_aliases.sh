@@ -85,9 +85,9 @@ if [ $(uname) == Darwin ]; then
   alias mongod.start='echo "$MONGOD_COMMAND" && $MONGOD_COMMAND'
 fi
 
-############
-#  reevoo  #
-############
-
-alias edb='knife data bag --secret-file /etc/chef/encrypted_data_bag_secret'
-alias kcu='knife cookbook upload'
+function photo_stream() {
+  while :; do
+    imagesnap ~/Desktop/$(date +%y%m%d%H%M%S).png
+    sleep ${1-1}
+  done
+}
