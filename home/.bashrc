@@ -129,6 +129,12 @@ fi
 if [ -f "/usr/share/autojump/autojump.sh" ]; then
   source /usr/share/autojump/autojump.sh
 fi
+# Start autojump on OSX
+[[ $(type -P "brew") ]] && if [ -f $(brew --prefix)/etc/profile.d/autojump.sh ]; then
+  $(brew --prefix)/etc/profile.d/autojump.sh
+fi
 
-# added by travis gem
-[ -f /Users/louis/.travis/travis.sh ] && source /Users/louis/.travis/travis.sh
+# OSX bash completion
+[[ $(type -P "brew") ]] && if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi
