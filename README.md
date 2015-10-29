@@ -43,4 +43,3 @@ homeshick link vimrc
 | media scrobbling | mpdscribble |
 | mouse hider | unclutter |
 | music player | mpd + mpc (+ ncmpcpp) |
-| web browser | Firefox with Vimperator |
