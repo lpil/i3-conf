@@ -131,10 +131,10 @@ if [ -f "/usr/share/autojump/autojump.sh" ]; then
 fi
 # Start autojump on OSX
 [[ $(type -P "brew") ]] && if [ -f $(brew --prefix)/etc/profile.d/autojump.sh ]; then
-  $(brew --prefix)/etc/profile.d/autojump.sh
+  source $(brew --prefix)/etc/profile.d/autojump.sh
 fi
 
 # OSX bash completion
 [[ $(type -P "brew") ]] && if [ -f $(brew --prefix)/etc/bash_completion ]; then
-  . $(brew --prefix)/etc/bash_completion
+  source $(brew --prefix)/etc/bash_completion
 fi
