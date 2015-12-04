@@ -91,3 +91,5 @@ function photo_stream() {
     sleep ${1-1}
   done
 }
+
+alias i="echo You\'re already in insert mode, you numpty."
