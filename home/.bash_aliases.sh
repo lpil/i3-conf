@@ -38,6 +38,11 @@ alias ....='cd ../../..'
 # Go to ~/downloads
 alias dl='cd ~/downloads'
 
+# Hub, yo
+command -v hub >/dev/null 2>&1 && {
+  alias git=hub
+}
+
 #################
 # Default flags #
 #################
