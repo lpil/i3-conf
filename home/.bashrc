@@ -109,11 +109,6 @@ if [ -d "$HOME/.nodenv" ]; then
   export PATH="$HOME/.nodenv/bin:$PATH"
   eval "$(nodenv init -)"
 fi
-# Elixir exenv version manager
-if [ -d "$HOME/.exenv" ]; then
-  export PATH="$HOME/.exenv/bin:$PATH"
-  eval "$(exenv init -)"
-fi
 
 # homeshick config manager
 if [ -d "$HOME/.homesick/repos/homeshick/bin" ]; then
