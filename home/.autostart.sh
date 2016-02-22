@@ -19,6 +19,8 @@ fi
 xset r rate 175 35 &
 # Turn off system bell
 xset b off &
+# Mouse config
+xset m 3/2 4 &
 
 # Configure touchpad
 if egrep -iq 'touchpad' /proc/bus/input/devices; then
