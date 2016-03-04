@@ -134,5 +134,5 @@ fi
 [[ $(type -P "brew") ]] && if [ -f $(brew --prefix)/etc/bash_completion ]; then
   source $(brew --prefix)/etc/bash_completion
 fi
-export GOPATH=$HOME/.go
+export GOPATH=$HOME/projects/go
 export PATH=$PATH:$GOPATH/bin
