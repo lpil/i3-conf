@@ -25,7 +25,7 @@ xset m 3/2 4 &
 # Configure touchpad
 if egrep -iq 'touchpad' /proc/bus/input/devices; then
   synclient VertEdgeScroll=1 &
-  synclient VertTwoFingerScroll=0 &
+  synclient VertTwoFingerScroll=1 &
   synclient TapButton1=0 &
   synclient MinSpeed=3.5
   synclient MinSpeed=2.5
