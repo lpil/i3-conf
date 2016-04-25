@@ -26,9 +26,9 @@ xset m 3/2 4 &
 if egrep -iq 'touchpad' /proc/bus/input/devices; then
   synclient VertEdgeScroll=1 &
   synclient VertTwoFingerScroll=1 &
-  synclient TapButton1=0 &
-  synclient MinSpeed=3.5
-  synclient MinSpeed=2.5
+  synclient HorizTwoFingerScroll=1 &
+  synclient TapButton1=1 &
+  synclient MinSpeed=1.0
 fi
 
 # Hide mouse cursor when not in use
