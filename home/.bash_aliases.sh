@@ -73,11 +73,7 @@ alias ber='bundle exec rake'
 # pop up server
 alias serve='echo "ruby -run -e httpd . -p 4000" && ruby -run -e httpd . -p 4000'
 
-# Launch sublime in cwd
-alias sublime="open -a 'sublime text' ."
-# Launch gitx in cwd
-alias gitx="open -a 'gitx' ."
-
+alias switchoff='/usr/bin/dbus-send --system --print-reply --dest="org.freedesktop.ConsoleKit" /org/freedesktop/ConsoleKit/Manager org.freedesktop.ConsoleKit.Manager.Stop'
 
 # OSX
 if [ $(uname) == Darwin ]; then
@@ -85,6 +81,9 @@ if [ $(uname) == Darwin ]; then
   alias tree='tree -C'
   alias less='less -R'
   alias tulpn='sudo lsof -nP -iTCP -sTCP:LISTEN'
+
+  # Launch sublime in cwd
+  alias subl="open -a 'sublime text' ."
 
   MONGOD_COMMAND="mongod --config /usr/local/etc/mongod.conf --fork"
   alias mongod.start='echo "$MONGOD_COMMAND" && $MONGOD_COMMAND'
