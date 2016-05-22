@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+text='
+fetch("https://www.reddit.com/r/me_irl.json")
+  .then(x => x.json())
+  .then(x => {
+    const c = x.data
+      .children
+      .map(thing => thing.data.url)
+      .reduce((a, e) => `${a} "${e}" `, "x-www-browser ")
+    console.log(c);
+    });'
+
+echo "$text" | xsel
+echo Script copied to clipboard. Run in browser console.
