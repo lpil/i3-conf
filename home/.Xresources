@@ -26,6 +26,13 @@ URxvt*.shading:      80
 ! font spacing
 URxvt.letterSpace: -1
 
+! Plugins
+URxvt.perl-ext-common: font-size
+
+URxvt.keysym.C-equal:  perl:font-size:increase
+URxvt.keysym.C-minus:  perl:font-size:decrease
+URxvt.keysym.C-0:      perl:font-size:reset
+
 !==============!
 !=> Xft font <=!
 !==============!
