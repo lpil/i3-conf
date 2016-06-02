@@ -59,15 +59,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export PATH="$HOME/bin:$PATH"
-export PATH="$HOME/.local/bin:$PATH"
-export PATH="$PATH:/home/louis/.cache/rebar3/bin"
-
-export GOPATH=$HOME/projects/go
-export PATH=$PATH:$GOPATH/bin
-
-export EDITOR="/usr/bin/env nvim"
-
 ###########
 #  Prompt #
 ###########
@@ -138,3 +129,13 @@ fi
 [[ $(type -P "brew") ]] && if [ -f $(brew --prefix)/etc/bash_completion ]; then
   source $(brew --prefix)/etc/bash_completion
 fi
+
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="$PATH:/home/louis/.cache/rebar3/bin"
+export PATH="$HOME/bin:$PATH"
+
+export GOPATH=$HOME/projects/go
+export PATH=$PATH:$GOPATH/bin
+
+export EDITOR="/usr/bin/env nvim"
+
