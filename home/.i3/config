@@ -23,14 +23,14 @@ hide_edge_borders none
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec "i3-sensible-terminal"
 
 # kill focused window
 bindsym $mod+Shift+Q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id dmenu_run
-bindsym $mod+shift+D exec --no-startup-id i3-dmenu-desktop
+bindsym $mod+d exec --no-startup-id "dmenu_run"
+bindsym $mod+shift+D exec --no-startup-id "i3-dmenu-desktop"
 
 # change focus
 bindsym $mod+h focus left
@@ -112,7 +112,7 @@ bindsym Mod4+Shift+Left move container to workspace prev
 bindsym Mod4+Shift+Right move container to workspace next
 
 # Lock screen
-bindsym $mod+backslash exec i3lock -c 303030
+bindsym $mod+backslash exec "i3lock -c 303030"
 
 # reload the configuration file
 bindsym $mod+Shift+C reload
@@ -143,21 +143,21 @@ mode "resize" {
 }
 
 # mpd / mpc
-bindcode $mod+34 exec --no-startup-id mpc toggle  # [
-bindcode $mod+35 exec --no-startup-id mpc next    # ]
+bindcode $mod+34 exec --no-startup-id "mpc toggle"  # [
+bindcode $mod+35 exec --no-startup-id "mpc next"    # ]
 # bindsym $mod+p exec --no-startup-id notify-send "$(mpc -f "%artist% - %title%[ ([%album% ][%date%])]" | head -2)"
 # bindsym $mod+o exec --no-startup-id notify-send "$(mpc playlist -f "%position%> %artist% - %title%" | head -9)"
 # Open ncmpcpp in scratchpad
-bindsym $mod+m exec --no-startup-id urxvt -name scratchpad -e ncmpcpp
+bindsym $mod+m exec --no-startup-id "urxvt -name scratchpad -e ncmpcpp"
 
 # volume control
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 1 -- +1% && killall -SIGUSR1 i3status
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 1 -- -1% && killall -SIGUSR1 i3status
-bindsym XF86AudioMute exec amixer -q set Master toggle && killall -SIGUSR1 i3status
+bindsym XF86AudioRaiseVolume exec --no-startup-id "pactl set-sink-volume 1 -- +1% && killall -SIGUSR1 i3status"
+bindsym XF86AudioLowerVolume exec --no-startup-id "pactl set-sink-volume 1 -- +1% && killall -SIGUSR1 i3status"
+bindsym XF86AudioMute exec "amixer -q set Master toggle && killall -SIGUSR1 i3status"
 
 # backlight control
-bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 5
-bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 5
+bindsym XF86MonBrightnessUp exec --no-startup-id "xbacklight -inc 5"
+bindsym XF86MonBrightnessDown exec --no-startup-id "xbacklight -dec 5"
 
 #############
 #=> Modes <=#
@@ -187,9 +187,6 @@ bar {
 
 # Scratchpad instances should be scratchpad
 for_window [instance="scratchpad"] move window to scratchpad, scratchpad show
-
-# Google hangouts
-for_window [class="Chromium" instance="crx_nckgahadagoaajjgafhacjanaoiihapd"] floating enable, move window to workspace current
 
 #############################
 #=> Autoload applications <=#
