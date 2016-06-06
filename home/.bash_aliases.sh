@@ -98,3 +98,10 @@ function photo_stream() {
 }
 
 alias i="echo You\'re already in insert mode, you numpty."
+
+
+############
+#  Docker  #
+############
+
+alias docker-couchdb="docker run -t -d -p 5984:5984 --name couchdb klaemo/couchdb"

@@ -43,12 +43,12 @@ if [ $? -ne 0 ]; then
   clipit -n &
 fi
 
-# don't activate screensaver
-xset s off
-# don't blank the video device
-xset s noblank
-# disable DPMS (Energy Star) features.
-xset -dpms
+# # don't activate screensaver
+# xset s off
+# # don't blank the video device
+# xset s noblank
+# # disable DPMS (Energy Star) features.
+# xset -dpms
 
 # mpd
 pidof mpd >& /dev/null
@@ -60,3 +60,7 @@ pidof mpdscribble >& /dev/null
 if [ $? -ne 0 ]; then
   (bash -c "cd ~ && mpdscribble") &
 fi
+
+# Enable sound
+amixer -c 1 set Speaker 100%
+amixer -c 1 set Speaker on
