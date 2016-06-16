@@ -36,7 +36,6 @@ URxvt.keysym.C-0:      perl:font-size:reset
 !==============!
 !=> Xft font <=!
 !==============!
-Xft*.dpi:            96
 Xft*.antialias:      true
 Xft*.hinting:        full
 
