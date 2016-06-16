@@ -5,8 +5,8 @@ URxvt*.saveLines:    2048
 URxvt*.visualBell:   false
 URxvt*.urgentOnBell: true
 
-URxvt*.font:         xft:Droid Sans Mono:size=10
-URxvt*.boldFont:     xft:Droid Sans Mono:bold:size=10
+URxvt*.font:         xft:DejaVu Sans Mono:size=10
+URxvt*.boldFont:     xft:DejaVu Sans Mono:bold:size=10
 URxvt*.scrollBar:    false
 ! Color to fade to
 URxvt*.fadeColor:    #000000
