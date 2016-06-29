@@ -105,3 +105,4 @@ alias i="echo You\'re already in insert mode, you numpty."
 ############
 
 alias docker-couchdb="docker run -t -d -p 5984:5984 --name couchdb klaemo/couchdb"
+alias docker-postgres="docker run -t -d -p 5432:5432 --name postgres postgres"
