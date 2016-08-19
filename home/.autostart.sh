@@ -8,13 +8,6 @@ xmodmap -e "remove lock = Caps_Lock" &
 # Disable caps lock
 setxkbmap -option ctrl:nocaps &
 
-# Redshift monitor color modulation
-# lat:lon for London, day temp neutral (6500K)
-pidof redshift >& /dev/null
-if [ $? -ne 0 ]; then
-  redshift -l 51:0 -t 6500:4500 &
-fi
-
 # Keyboard refresh rate
 xset r rate 175 35 &
 # Turn off system bell
@@ -43,22 +36,10 @@ if [ $? -ne 0 ]; then
   clipit -n &
 fi
 
-# # don't activate screensaver
-# xset s off
-# # don't blank the video device
-# xset s noblank
-# # disable DPMS (Energy Star) features.
-# xset -dpms
-
 # mpd
 pidof mpd >& /dev/null
 if [ $? -ne 0 ]; then
   (mpd && sleep 4 && mpc single off && mpc consume on) &
-fi
-# mpd librefm scrobbling
-pidof mpdscribble >& /dev/null
-if [ $? -ne 0 ]; then
-  (bash -c "cd ~ && mpdscribble") &
 fi
 
 # Enable sound
