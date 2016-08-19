@@ -116,10 +116,11 @@ export PGHOST=localhost
 export PGUSER=postgres
 
 # Path
+export GOPATH="$HOME/projects/go"
 export PATH="$HOME/.local/bin:$PATH"
-export PATH="$PATH:/home/louis/.cache/rebar3/bin"
+export PATH="$PATH:$HOME/.cache/rebar3/bin"
+export PATH="$PATH:$GOPATH/bin"
+export PATH="$PATH:$HOME/.cargo/bin"
 export PATH="$HOME/bin:$PATH"
-export PATH=$PATH:$GOPATH/bin
-export GOPATH=$HOME/projects/go
 
 export EDITOR="/usr/bin/env nvim"
