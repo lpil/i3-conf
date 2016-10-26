@@ -41,7 +41,3 @@ pidof mpd >& /dev/null
 if [ $? -ne 0 ]; then
   (mpd && sleep 4 && mpc single off && mpc consume on) &
 fi
-
-# Enable sound
-amixer -c 1 set Speaker 100%
-amixer -c 1 set Speaker on

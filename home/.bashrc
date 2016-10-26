@@ -110,18 +110,3 @@ fi
 [[ $(type -P "brew") ]] && if [ -f $(brew --prefix)/etc/bash_completion ]; then
   source $(brew --prefix)/etc/bash_completion
 fi
-
-# Postgres config
-export PGHOST=localhost
-export PGUSER=postgres
-
-# Path
-export GOPATH="$HOME/projects/go"
-export PATH="$HOME/.local/bin:$PATH"
-export PATH="$PATH:$HOME/.cache/rebar3/bin"
-export PATH="$PATH:$GOPATH/bin"
-export PATH="$PATH:$HOME/.cargo/bin"
-export PATH="$PATH:$HOME/bin/node/bin"
-export PATH="$HOME/bin:$PATH"
-
-export EDITOR="/usr/bin/env nvim"
