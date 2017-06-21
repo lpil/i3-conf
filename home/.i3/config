@@ -2,7 +2,7 @@
 set $mod Mod1
 
 # font for window titles. ISO 10646 = Unicode
-font pango:droid sans mono 8
+font pango:droid sans mono 9
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 
 # Window decoration
@@ -151,9 +151,9 @@ bindcode $mod+35 exec --no-startup-id "mpc next"
 bindsym $mod+m exec --no-startup-id "urxvt -name scratchpad -e ncmpcpp"
 
 # volume control
-bindsym XF86AudioRaiseVolume exec --no-startup-id "pactl set-sink-volume 1 -- +1% && killall -SIGUSR1 i3status"
-bindsym XF86AudioLowerVolume exec --no-startup-id "pactl set-sink-volume 1 -- -1% && killall -SIGUSR1 i3status"
-bindsym XF86AudioMute exec "amixer -q set Master toggle && killall -SIGUSR1 i3status"
+bindsym XF86AudioRaiseVolume exec --no-startup-id "pactl set-sink-volume @DEFAULT_SINK@ +1%"
+bindsym XF86AudioLowerVolume exec --no-startup-id "pactl set-sink-volume @DEFAULT_SINK@ -1%"
+bindsym XF86AudioMute exec "amixer -q set Master toggle"
 
 # backlight control
 bindsym XF86MonBrightnessUp exec --no-startup-id "xbacklight -inc 5"
