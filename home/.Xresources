@@ -19,9 +19,9 @@ URxvt*.foreground:   #DEDEDE
 URxvt*.colorUL:      #86a2b0
 
 ! pseudo transparency
-URxvt*.transparent:  true
+! URxvt*.transparent:  true
 ! 0-99 darkens, 101-200 lightens
-URxvt*.shading:      80
+! URxvt*.shading:      80
 
 ! font spacing
 URxvt.letterSpace: -1
