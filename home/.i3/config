@@ -169,17 +169,17 @@ mode "pass-through" {
   bindsym $mod+Escape mode "default"
 }
 
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
-bar {
-  status_command i3status
-  colors {
-    statusline #DEDEDE
-    background #303030
-    # focused_workspace $gray2 $gray2 #FFFFFF
-    inactive_workspace #404040 #303030 #DEDEDE
-  }
-}
+# # Start i3bar to display a workspace bar (plus the system information i3status
+# # finds out, if available)
+# bar {
+#   status_command i3status
+#   colors {
+#     statusline #DEDEDE
+#     background #303030
+#     # focused_workspace $gray2 $gray2 #FFFFFF
+#     inactive_workspace #404040 #303030 #DEDEDE
+#   }
+# }
 
 ###############
 #=> Classes <=#

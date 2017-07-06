@@ -3,8 +3,6 @@ i3-conf
 
 My i3 desktop.
 
-Tested on Debian Jessie
-
 ## Linking dotfiles
 
 Homeshick is awesome.
@@ -27,8 +25,6 @@ homeshick link vimrc
 | What | Which |
 | ---- | ----- |
 | font | Droid |
-| gtk icon theme | gnome-brave |
-| gtk theme | Adwaita |
 | terminal | rxvt unicode 256 |
 | wm | i3 |
 
