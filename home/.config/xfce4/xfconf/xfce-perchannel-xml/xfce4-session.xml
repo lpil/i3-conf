@@ -9,7 +9,7 @@
   <property name="sessions" type="empty">
     <property name="Failsafe" type="empty">
       <property name="IsFailsafe" type="empty"/>
-      <property name="Count" type="int" value="3"/>
+      <property name="Count" type="int" value="2"/>
       <property name="Client0_Command" type="array">
         <value type="string" value="i3"/>
       </property>
@@ -18,10 +18,6 @@
         <value type="string" value="xfsettingsd"/>
       </property>
       <property name="Client1_PerScreen" type="bool" value="false"/>
-      <property name="Client2_Command" type="array">
-        <value type="string" value="xfce4-panel"/>
-      </property>
-      <property name="Client2_PerScreen" type="bool" value="false"/>
     </property>
   </property>
   <property name="splash" type="empty">
